@@ -1,0 +1,71 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback');
+body{
+    margin: 0;
+    padding: 0;
+    /* background: radial-gradient(rgb(255, 255, 255),rgb(94, 160, 204)); */
+    background-color: #e9ecef;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: bold; */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 2em auto;
+    /* background-color: #8cf0f7e8; */
+    background-color: white;
+    border-radius: .4em;
+}
+.container #icon{
+    display: flex;
+    justify-content: center;
+    margin-top: .3em;
+    font-size: 6em;
+    color: #007bff;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.container__element{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0em;
+}
+.container__element input[type="text"], input[type="password"] {
+    width: auto;
+    border: 1px solid #bbc0c5;
+    margin: 1em 0em .1em;
+    padding: .375rem .75rem;
+    border-radius: .3em;
+}
+.elementButton{
+    justify-content: center;
+    align-items: center;   
+}
+.container form p{
+    text-align: center;
+}
+.container form span p{
+    font-size: 1.3em;
+}
+.container__element button{  
+    padding: .3em 2em;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border-radius: .2em;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container__element button:hover{
+    transform: scale(1.1,1.1);
+    transition: ease .5s;
+}
+.container form a{
+    margin: 0 auto;
+}

@@ -1,0 +1,32 @@
+/*-----------------footer----------------*/
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    background-color: rgba(11,54,100);
+    color: white;
+    padding: 1rem 0;
+}
+.footer__option{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.footer__icon{
+    width: 2rem;
+    color: white;
+}
+.footer--networks{
+    gap: .8em;
+    align-items: center;
+}
+.footer__option--email{
+    position: relative;
+    top: -7px;
+    padding-left: .5rem;
+}
+.footer__option--phone{
+    position: relative;
+    top: 3px;
+    padding-right: .5rem;
+}
