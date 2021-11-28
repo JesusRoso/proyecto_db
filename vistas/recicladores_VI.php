@@ -117,6 +117,7 @@ class recicladores_VI
             }
 
             function verActualizarRecicladores(doc_reciclador,correo_reciclador){
+                let ciudad_reciclador = document.querySelector('#ciudad_reciclador').value;
                 document.querySelector('#prueba').innerHTML=`
                 <div class="modal" id="ventana_modal">
                     <div class="modal-dialog">
@@ -126,11 +127,11 @@ class recicladores_VI
                             <button class="close" data-dismiss="modal">&times;</button>
                             <div class="form-group">
                                 <label for="correo_nuevo">Correo electr&oacute;nico</label>
-                                <input type="text" class="form-control" id="correo_nuevo" name="correo_nuevo" value="${correo_reciclador}">
+                                <input type="text" class="form-control" id="correo_nuevo" name="correo_nuevo">
                             </div>
                             <div class="form-group">
                                 <label for="ciudad_reciclador">Ciudad de vivienda</label>
-                                <select name="ciudad_reciclador" id="ciudad_reciclador" class="options options--city">
+                                <select name="ciudad_reciclador" id="ciudad_reciclador" class="options options--city" value="${ciudad_reciclador}">
                                     <option value="" disabled selected>Elija una opción</option>
                                     <option value="498">Oca&ntilde;a</option>
                                     <option value="003">Abrego</option>

@@ -48,7 +48,7 @@ class registros_VI
                         <label for="">Contraseña</label>
                         <input type="password" name="password" required>
                     </div>
-                    <div class="elementButton container__element"><button type="submit">Enviar</button></div>
+                    <div class="elementButton container__element"><button type="submit">Registrar</button></div>
                     <a href="index.php">Iniciar Sesion</a>
                 </form>
             </div> 
