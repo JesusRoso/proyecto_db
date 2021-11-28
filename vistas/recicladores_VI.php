@@ -189,8 +189,8 @@ class recicladores_VI
                         let fila= `
                         <tr>
                             <td>${doc_reciclador}</td>
-                            <td>${nombres_reciclador}</td>
-                            <td>${apellidos_reciclador}</td>
+                            <td>${nombres_reciclador} ${apellidos_reciclador}</td>
+                            <td id="reciclador_correo_${doc_reciclador}">${correo_reciclador}</td>
                             <td ><i style="cursor:pointer;" class="fas fa-pen-alt" data-toggle="modal" data-target="#ventana_modal" onclick="verActualizarRecicladores('${doc_reciclador}','${correo_reciclador}');"></i></td>
                         </tr>
                         `;

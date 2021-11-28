@@ -29,7 +29,7 @@ class recicladores_CO
 
         $arreglo_respuesta = [
             "mensaje"=>"EXITO",
-            "doc_reciclador"=>$doc_reciclador
+            "doc_reciclador"=>$documento_reciclador
         ];
 
         echo json_encode($arreglo_respuesta);

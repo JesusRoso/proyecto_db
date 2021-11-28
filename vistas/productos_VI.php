@@ -96,7 +96,7 @@ class productos_VI
             function confirmarEliminar(eliminar)
             {
                 let boton = '<button class="close" data-dismiss="modal">&times;</button>'
-                document.getElementById('titulo_modal').innerHTML='Confirmar la eliminaci&oacute;n'+boton
+                document.getElementById('titulo_modal').innerHTML='Confirmar la desactivaci&oacute;n'+boton
                 var contenido='¿Desea desactivar el registro?';
                 contenido+='<br><br><button type="button" class="btn btn-danger" onclick="eliminar('+eliminar+');">Desactivar</button>';
                 document.getElementById('contenido_modal').innerHTML=contenido;
@@ -107,7 +107,7 @@ class productos_VI
                     if(respuesta=="EXITO")
                     {
                         $('#fila'+eliminarProducto).remove();
-                        toastr.success('Eliminado exitosamente');
+                        toastr.success('Desactivado exitosamente');
                     }
                     else
                     {
@@ -179,11 +179,11 @@ class productos_VI
                     if(res.estado=='EXITO')
                     {
                         let fila= `
-                        <tr>
+                        <tr id="fila${cod_producto}">
                             <td id="producto_nombre_${cod_producto}">${nombres_producto}</td>
                             <td id="producto_puntos_${cod_producto}">${puntos_producto}</td>
                             <td style="cursor:pointer;"><i class="fas fa-pen-alt" data-toggle="modal" data-target="#ventana_modal_actualizar" onclick="verActualizarProductos(${cod_producto},'${nombres_producto}');"></i>
-                            <button style="margin-left: 15px;" type="button" class="btn btn-danger" data-toggle="modal" data-target="#ventana_modal" onclick="confirmarEliminar('<?php echo $productos_id;?>')">Eliminar</button>
+                            <button style="margin-left: 15px;" type="button" class="btn btn-danger" data-toggle="modal" data-target="#ventana_modal" onclick="confirmarEliminar('${cod_producto}')">Desactivar</button>
                             </td>
                              
                         </tr>
